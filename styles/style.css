@@ -94,3 +94,21 @@ hr {
   text-decoration: none;
   color: #562eff;
 }
+
+/* latest course styles */
+.course img {
+  width: 224px;
+  height: 104px;
+}
+
+.course-info {
+  display: flex;
+}
+
+.fa-star.filled {
+  color: #ffc014;
+}
+
+.fa-star.empty {
+  color: #aeaeae;
+}
