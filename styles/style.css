@@ -112,7 +112,7 @@ hr {
 
 .course {
   width: 235px;
-  padding: 13px 17px 0 11px;
+  padding: 13px 17px 10px 11px;
   box-shadow: 0px 5px 13px #0000000d;
   border-radius: 10px;
 }
@@ -172,4 +172,33 @@ hr {
 
 .course-time span {
   margin-left: 5px;
+}
+
+/* mobile styles */
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .player {
+    flex-direction: column;
+  }
+
+  .blogs,
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    grid-row-gap: 15px;
+  }
+}
+
+/* tablet styles */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
 }
