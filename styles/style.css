@@ -1,5 +1,5 @@
 /* fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 /* common styles and utilities */
 body {
@@ -42,6 +42,7 @@ hr {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 29px;
+  margin-top: 40px;
 }
 
 .player {
@@ -64,7 +65,9 @@ hr {
 .blogs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 46px;
   grid-row-gap: 26px;
+  margin-top: 31px;
 }
 
 .blog {
@@ -87,6 +90,7 @@ hr {
 }
 
 .blog-author {
+  /* margin-top: 6px; */
   color: #9f9f9f;
 }
 
@@ -96,13 +100,57 @@ hr {
 }
 
 /* latest course styles */
+.latest-course {
+  margin-bottom: 30px;
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-family: "Roboto", sans-serif;
+}
+
+.course {
+  width: 235px;
+  padding: 13px 17px 0 11px;
+  box-shadow: 0px 5px 13px #0000000d;
+  border-radius: 10px;
+}
+
 .course img {
   width: 224px;
   height: 104px;
 }
 
+.course-title {
+  font-weight: 500;
+  font-size: 20px;
+  color: #1e1e1e;
+}
+
+.course-author {
+  font-size: 15px;
+  color: #ed6b4f;
+  margin-bottom: 19px;
+}
+
 .course-info {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course-rating span {
+  margin-left: 11px;
+  font-family: "Poppins";
+  font-size: 15px;
+  color: #a2a2a2;
+}
+
+.fa-star {
+  width: 12px;
+  height: 12px;
+  margin-left: 3px;
 }
 
 .fa-star.filled {
@@ -111,4 +159,17 @@ hr {
 
 .fa-star.empty {
   color: #aeaeae;
+}
+
+.course-time {
+  background-color: #ffe4e8;
+  padding: 5px 5px;
+  border-radius: 15px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  color: #ff4a60;
+}
+
+.course-time span {
+  margin-left: 5px;
 }
